@@ -1,0 +1,16 @@
+
+<h2 class="title pb-4">Your Blog Post Dashboard</h2><hr>
+
+<a href="/dashboard/newpost"><button id="create-post" class="btn btn-primary mb-4">Create Post</button></a>
+
+{{#each posts as |post|}}
+
+{{> post-detail post}}
+
+<a href="/dashboard/editpost/{{post.id}}"><button class="btn mb-5 btn-warning">Edit Post</button></a>
+
+{{else}}
+
+<h6 class="pb-4 has-text-centered is-italic">You have not created any posts. Please create one!</h6>
+
+{{/each}}

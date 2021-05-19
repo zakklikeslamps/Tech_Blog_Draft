@@ -1,0 +1,26 @@
+<div class="row">
+    <aside class="col">
+        <div class="card">
+            <article class="card-body">
+                <h4 class="card-title mb-4 mt-1">Edit your post</h4>
+                <form class="edit-post-form">
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input id="post-title" class="form-control" value="{{post.title}}" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Content</label>
+                        <textarea id="post-content" class="form-control" value="{{post.content}}" type="text">{{post.content}}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-info"> Update </button>
+                        <button type="button" class="btn btn-danger" post-id="{{post.id}}"> Delete </button>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </aside>
+</div>
+
+<script src="/js/editPost.js"></script>
+<script src="/js/deletePost.js"></script>

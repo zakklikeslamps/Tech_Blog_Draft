@@ -1,0 +1,19 @@
+
+{{> post-detail post}}
+
+{{#if logged_in}}
+
+<form class="add-comment">
+    <div class="form-group">
+        <input class="form-control" id="user-comment" placeholder="Your Comments" type="text" >
+
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-success">Comment</button>
+    </div>
+
+</form>
+
+<script src="/js/addComment.js"></script>
+
+{{/if}}
