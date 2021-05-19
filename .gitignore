@@ -102,3 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Mac-specific file
+.DS_Store
+
+# dotenv pkg
+.env
+
